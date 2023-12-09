@@ -1,0 +1,186 @@
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.wrappper {
+  max-width: 700px;
+  padding: 20px;
+  margin: auto;
+}
+
+.heading {
+  font-size: 16px;
+  text-align: center;
+}
+
+.subHeading {
+  font-size: 14px;
+  text-align: center;
+}
+
+.hr {
+  border-bottom: 2px dashed #ccc;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.button {
+  line-height: 1;
+  transition: all 0.4s;
+  border-radius: 5px;
+  background-color: rgb(153, 246, 228);
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: rbg(45, 212, 191);
+}
+
+.printableArea {
+  padding: 20px;
+  border: 2px dotted #000;
+  width: 100%;
+  width: calc(100% - 40px);
+}
+
+.formRow {
+  padding-top: 10px;
+}
+
+.formRow input {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 5px;
+  width: 100%;
+}
+
+.formRow .right,
+.formRow .left {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.formRow .desktop {
+  width: calc(100% - 5px);
+  display: inline-block;
+  vertical-align: top;
+}
+
+.formRow .left .colon {
+  display: inline-block;
+  width: 5px;
+  vertical-align: top;
+}
+
+.formRow .print {
+  display: none;
+}
+
+.squareWrap {
+  margin-left: -10px;
+  margin-right: -10px;
+  font-size: 0;
+  margin-top: 20px;
+}
+
+.squareWrap .left,
+.squareWrap .right {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  font-size: 14px;
+}
+
+.tableWrap {
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.jTable {
+  border: 1px solid #ccc;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.jTable td {
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.jTable td.centered {
+  border: 1px solid #ccc;
+}
+
+.jTable .s {
+  width: 80px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.jTable .s textarea {
+  width: 75px;
+  height: 65px;
+  border: none;
+  padding: 2px;
+  text-align: center;
+  resize: none;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+@media print {
+  @page {
+    size: auto;
+    /* auto is the initial value */
+    margin: 0;
+    /* this affects the margin in the printer settings */
+  }
+
+  body {
+    visibility: hidden;
+  }
+
+  .printableArea {
+    visibility: visible;
+  }
+
+  .formRow {
+    padding-top: 0;
+  }
+
+  .formRow input {
+    display: none;
+  }
+
+  .formRow .print {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .formRow .left .print {
+    width: calc(100% - 20px);
+  }
+}
