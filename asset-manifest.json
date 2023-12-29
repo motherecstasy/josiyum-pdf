@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/josiyum-pdf/static/css/main.ecdebe60.css",
-    "main.js": "/josiyum-pdf/static/js/main.bcdc78e6.js",
+    "main.css": "/josiyum-pdf/static/css/main.b80fe898.css",
+    "main.js": "/josiyum-pdf/static/js/main.bb336127.js",
     "index.html": "/josiyum-pdf/index.html",
-    "main.ecdebe60.css.map": "/josiyum-pdf/static/css/main.ecdebe60.css.map",
-    "main.bcdc78e6.js.map": "/josiyum-pdf/static/js/main.bcdc78e6.js.map"
+    "main.b80fe898.css.map": "/josiyum-pdf/static/css/main.b80fe898.css.map",
+    "main.bb336127.js.map": "/josiyum-pdf/static/js/main.bb336127.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecdebe60.css",
-    "static/js/main.bcdc78e6.js"
+    "static/css/main.b80fe898.css",
+    "static/js/main.bb336127.js"
   ]
 }
