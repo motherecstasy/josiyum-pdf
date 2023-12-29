@@ -27,14 +27,15 @@ input:focus {
   margin: auto;
 }
 
-.heading {
+.mainHeading {
   font-size: 16px;
   text-align: center;
 }
 
-.subHeading {
+.heading {
   font-size: 14px;
   text-align: center;
+  padding-top: 5px;
 }
 
 .hr {
@@ -51,6 +52,7 @@ input:focus {
   padding: 10px 20px;
   margin-top: 20px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -58,7 +60,7 @@ input:focus {
 }
 
 .printableArea {
-  padding: 20px;
+  padding: 15px;
   border: 2px dotted #000;
   width: 100%;
   width: calc(100% - 40px);
@@ -96,6 +98,8 @@ input:focus {
 
 .formRow .print {
   display: none;
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 .squareWrap {
@@ -125,7 +129,7 @@ input:focus {
 }
 
 .jTable td {
-  font-size: 16px;
+  font-size: 13px;
   text-align: center;
   border: 1px solid #ccc;
 }
@@ -169,6 +173,7 @@ input:focus {
 
   .formRow {
     padding-top: 0;
+    margin-top: -10px;
   }
 
   .formRow input {
@@ -182,5 +187,10 @@ input:focus {
 
   .formRow .left .print {
     width: calc(100% - 20px);
+  }
+
+  .hr {
+    margin-top: 15px;
+    margin-bottom: 5px;
   }
 }

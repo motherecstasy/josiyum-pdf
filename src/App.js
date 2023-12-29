@@ -7,7 +7,6 @@ function App() {
 
   const changeValue = (i, key, val) => {
     let tmpFields = fields.map((field, index) => {
-      console.log(index, i)
       if (index === i) {
         field[key] = val;
         return field;
@@ -51,8 +50,8 @@ function App() {
   return (
     <div className="wrappper">
       <div className="printableArea">
-        <div className="heading">அகரம் ஜோதிடம் (செந்தில் பட்டர்)</div>
-        <div className="subHeading">Phone: 94431 20975</div>
+        <div className="mainHeading">திருமணக் குறிப்பு</div>
+        <div className="heading">அகரம் ஜோதிடம் (N. செந்தில் பட்டர்) / Phone: 94431 20975</div>
         <div className="hr"></div>
         {fields.map((field, i) => {
           return (
